@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xCC24BA2ACC24BA2A",
       "device": "xck26-sfvc784-2LV-c",
       "gen_directory": "../../../../vMotion.gen/sources_1/bd/kr260_bd",
       "name": "kr260_bd",
@@ -17,7 +17,15 @@
       "proc_sys_reset_1": "",
       "axi_intc_0": "",
       "axi_smc": "",
-      "rst_ps8_0_99M": ""
+      "rst_ps8_0_99M": "",
+      "xlslice_0": ""
+    },
+    "ports": {
+      "fan_en_b": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
     },
     "components": {
       "zynq_ultra_ps_e_0": {
@@ -1209,7 +1217,10 @@
             "value": "1"
           },
           "PSU__TTC0__WAVEOUT__ENABLE": {
-            "value": "0"
+            "value": "1"
+          },
+          "PSU__TTC0__WAVEOUT__IO": {
+            "value": "EMIO"
           },
           "PSU__TTC1__CLOCK__ENABLE": {
             "value": "0"
@@ -1550,6 +1561,24 @@
         "xci_name": "kr260_bd_rst_ps8_0_99M_0",
         "xci_path": "ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xci",
         "inst_hier_path": "rst_ps8_0_99M"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "kr260_bd_xlslice_0_0",
+        "xci_path": "ip/kr260_bd_xlslice_0_0/kr260_bd_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1590,6 +1619,18 @@
           "rst_ps8_0_99M/peripheral_aresetn",
           "axi_intc_0/s_axi_aresetn",
           "axi_smc/aresetn"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "fan_en_b"
+        ]
+      },
+      "zynq_ultra_ps_e_0_emio_ttc0_wave_o": {
+        "ports": [
+          "zynq_ultra_ps_e_0/emio_ttc0_wave_o",
+          "xlslice_0/Din"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
