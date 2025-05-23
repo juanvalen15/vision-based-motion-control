@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Fri May 16 18:40:52 2025
+//Date        : Fri May 23 11:29:46 2025
 //Host        : jubu running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target kr260_bd.bd
 //Design      : kr260_bd
@@ -10,9 +10,10 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "kr260_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=kr260_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "kr260_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "kr260_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=kr260_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "kr260_bd.hwdef" *) 
 module kr260_bd
-   ();
+   (fan_en_b);
+  output [0:0]fan_en_b;
 
   wire axi_intc_0_irq;
   wire [8:0]axi_smc_M00_AXI_ARADDR;
@@ -34,6 +35,7 @@ module kr260_bd
   wire axi_smc_M00_AXI_WVALID;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
+  wire [0:0]fan_en_b;
   wire [0:0]rst_ps8_0_99M_peripheral_aresetn;
   wire [39:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST;
@@ -74,6 +76,7 @@ module kr260_bd
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WREADY;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WSTRB;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WVALID;
+  wire [2:0]zynq_ultra_ps_e_0_emio_ttc0_wave_o;
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
@@ -182,8 +185,12 @@ module kr260_bd
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps8_0_99M_peripheral_aresetn),
         .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk0));
+  kr260_bd_xlslice_0_0 xlslice_0
+       (.Din(zynq_ultra_ps_e_0_emio_ttc0_wave_o),
+        .Dout(fan_en_b));
   kr260_bd_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
-       (.maxigp2_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR),
+       (.emio_ttc0_wave_o(zynq_ultra_ps_e_0_emio_ttc0_wave_o),
+        .maxigp2_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR),
         .maxigp2_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST),
         .maxigp2_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARCACHE),
         .maxigp2_arid(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARID),

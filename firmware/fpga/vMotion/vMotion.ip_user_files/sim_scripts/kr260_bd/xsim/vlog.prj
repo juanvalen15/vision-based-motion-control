@@ -2,6 +2,7 @@ verilog xil_defaultlib --include "/home/juan/Xilinx/Vivado/2024.2/data/xilinx_vi
 "../../../bd/kr260_bd/ip/kr260_bd_zynq_ultra_ps_e_0_0/sim/kr260_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
 "../../../bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0.v" \
+"../../../bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/sim/bd_ac08.v" \
 "../../../bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_0/sim/bd_ac08_one_0.v" \
 
 sv xil_defaultlib --include "/home/juan/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/ec67/hdl" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/6f8f/hdl" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/3cbc" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/f0b6/hdl/verilog" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/0127/hdl/verilog" \
@@ -18,9 +19,9 @@ sv xil_defaultlib --include "/home/juan/Xilinx/Vivado/2024.2/data/xilinx_vip/inc
 "../../../bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_12/sim/bd_ac08_m00e_0.sv" \
 
 verilog xil_defaultlib --include "/home/juan/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/ec67/hdl" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/6f8f/hdl" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/3cbc" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/f0b6/hdl/verilog" --include "../../../../vMotion.gen/sources_1/bd/kr260_bd/ipshared/0127/hdl/verilog" \
-"../../../bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/sim/bd_ac08.v" \
 "../../../bd/kr260_bd/ip/kr260_bd_axi_smc_0/sim/kr260_bd_axi_smc_0.v" \
 "../../../bd/kr260_bd/sim/kr260_bd.v" \
+"../../../bd/kr260_bd/ip/kr260_bd_xlslice_0_0/sim/kr260_bd_xlslice_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

@@ -104,7 +104,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param bd.open.in_stealth_mode 1
+  set_param bd.open.in_stealth_mode 3
   set_param chipscope.maxJobs 8
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
@@ -127,6 +127,7 @@ OPTRACE "add files" START { }
   add_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/sources_1/bd/kr260_bd/kr260_bd.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

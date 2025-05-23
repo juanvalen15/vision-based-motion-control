@@ -54,7 +54,7 @@
 (* CHECK_LICENSE_TYPE = "kr260_bd_zynq_ultra_ps_e_0_0,zynq_ultra_ps_e_v3_5_5_zynq_ultra_ps_e,{}" *)
 (* CORE_GENERATION_INFO = "kr260_bd_zynq_ultra_ps_e_0_0,zynq_ultra_ps_e_v3_5_5_zynq_ultra_ps_e,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=zynq_ultra_ps_e,x_ipVersion=3.5,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_DP_USE_AUDIO=0,C_DP_USE_VIDEO=0,C_MAXIGP0_DATA_WIDTH=128,C_MAXIGP1_DATA_WIDTH=128,C_MAXIGP2_DATA_WIDTH=32,C_SAXIGP0_DATA_WIDTH=128,C_SAXIGP1_DATA_WIDTH=128,C_SAXIGP2_DATA_WIDTH=128,C_SAXIGP3_DATA_WIDTH=128,C_SAXIGP4_DATA_WIDTH=128,C_SAXIGP5_DATA_WIDTH=128,C_SAXIG\
 P6_DATA_WIDTH=128,C_USE_DIFF_RW_CLK_GP0=0,C_USE_DIFF_RW_CLK_GP1=0,C_USE_DIFF_RW_CLK_GP2=0,C_USE_DIFF_RW_CLK_GP3=0,C_USE_DIFF_RW_CLK_GP4=0,C_USE_DIFF_RW_CLK_GP5=0,C_USE_DIFF_RW_CLK_GP6=0,C_EN_FIFO_ENET0=0,C_EN_FIFO_ENET1=0,C_EN_FIFO_ENET2=0,C_EN_FIFO_ENET3=0,C_PL_CLK0_BUF=TRUE,C_PL_CLK1_BUF=TRUE,C_PL_CLK2_BUF=FALSE,C_PL_CLK3_BUF=FALSE,C_TRACE_PIPELINE_WIDTH=8,C_EN_EMIO_TRACE=0,C_TRACE_DATA_WIDTH=32,C_USE_DEBUG_TEST=0,C_SD0_INTERNAL_BUS_WIDTH=5,C_SD1_INTERNAL_BUS_WIDTH=5,C_NUM_F2P_0_INTR_INPUTS=1,\
-C_NUM_F2P_1_INTR_INPUTS=1,C_EMIO_GPIO_WIDTH=1,C_NUM_FABRIC_RESETS=1}" *)
+C_NUM_F2P_1_INTR_INPUTS=1,C_EMIO_GPIO_WIDTH=1,C_NUM_FABRIC_RESETS=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module kr260_bd_zynq_ultra_ps_e_0_0 (
   maxihpm0_lpd_aclk,
@@ -97,8 +97,13 @@ module kr260_bd_zynq_ultra_ps_e_0_0 (
   maxigp2_rready,
   maxigp2_awqos,
   maxigp2_arqos,
+  emio_enet0_enet_tsu_timer_cnt,
+  emio_ttc0_wave_o,
   pl_ps_irq0,
   pl_resetn0,
+  pl_resetn1,
+  pl_resetn2,
+  pl_resetn3,
   pl_clk0,
   pl_clk1
 );
@@ -188,6 +193,8 @@ output wire maxigp2_rready;
 output wire [3 : 0] maxigp2_awqos;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_LPD ARQOS" *)
 output wire [3 : 0] maxigp2_arqos;
+output wire [93 : 0] emio_enet0_enet_tsu_timer_cnt;
+output wire [2 : 0] emio_ttc0_wave_o;
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 PL_PS_IRQ0 INTERRUPT" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
@@ -196,6 +203,18 @@ input wire [0 : 0] pl_ps_irq0;
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_RESETN0, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 output wire pl_resetn0;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 PL_RESETN1 RST" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_RESETN1, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+output wire pl_resetn1;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 PL_RESETN2 RST" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_RESETN2, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+output wire pl_resetn2;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 PL_RESETN3 RST" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_RESETN3, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+output wire pl_resetn3;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 PL_CLK0 CLK" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_CLK0, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN kr260_bd_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
@@ -242,7 +261,7 @@ output wire pl_clk1;
     .C_NUM_F2P_0_INTR_INPUTS(1),
     .C_NUM_F2P_1_INTR_INPUTS(1),
     .C_EMIO_GPIO_WIDTH(1),
-    .C_NUM_FABRIC_RESETS(1)
+    .C_NUM_FABRIC_RESETS(4)
   ) inst (
     .maxihpm0_fpd_aclk(1'B0),
     .maxigp0_awid(),
@@ -1005,7 +1024,7 @@ output wire pl_clk1;
     .fmio_gem_tsu_clk_to_pl_bufg(),
     .fmio_gem_tsu_clk_from_pl(1'B0),
     .emio_enet_tsu_clk(1'B0),
-    .emio_enet0_enet_tsu_timer_cnt(),
+    .emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt),
     .emio_enet0_ext_int_in(1'B0),
     .emio_enet1_ext_int_in(1'B0),
     .emio_enet2_ext_int_in(1'B0),
@@ -1103,7 +1122,7 @@ output wire pl_clk1;
     .ps_pl_tracectl(),
     .ps_pl_tracedata(),
     .trace_clk_out(),
-    .emio_ttc0_wave_o(),
+    .emio_ttc0_wave_o(emio_ttc0_wave_o),
     .emio_ttc0_clk_i(3'B0),
     .emio_ttc1_wave_o(),
     .emio_ttc1_clk_i(3'B0),
@@ -1205,9 +1224,9 @@ output wire pl_clk1;
     .pl_ps_irq0(pl_ps_irq0),
     .pl_ps_irq1(1'B0),
     .pl_resetn0(pl_resetn0),
-    .pl_resetn1(),
-    .pl_resetn2(),
-    .pl_resetn3(),
+    .pl_resetn1(pl_resetn1),
+    .pl_resetn2(pl_resetn2),
+    .pl_resetn3(pl_resetn3),
     .osc_rtc_clk(),
     .pl_pmu_gpi(32'B0),
     .pmu_pl_gpo(),

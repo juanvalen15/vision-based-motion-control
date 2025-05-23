@@ -56,7 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param bd.open.in_stealth_mode 3
+set_param chipscope.maxJobs 8
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -112,6 +113,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc
+set_property used_in_implementation false [get_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

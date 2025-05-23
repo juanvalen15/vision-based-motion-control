@@ -6,10 +6,11 @@
 
 (* BLOCK_STUB = "true" *)
 module kr260_bd (
-
+  fan_en_b
 );
 
-
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [0:0]fan_en_b;
 
   // stub module has no contents
 
