@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.2
-| Date         : Fri May 23 13:38:57 2025
+| Date         : Tue May 27 22:31:10 2025
 | Host         : jubu
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-
@@ -29,7 +29,7 @@ Clock 1: kr260_bd_i/zynq_ultra_ps_e_0/inst/pl_clk0
 	Clock source type: BUFG_PS
 	Clock source region: X0Y3
 	Clock regions with locked loads: X0Y3 
-	initial rect ((0, 3), (0, 3))
+	initial rect ((0, 1), (0, 3))
 
 
 

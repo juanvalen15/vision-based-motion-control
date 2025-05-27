@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6C7E5FBF56E7A059",
+      "boundary_crc": "0x1C386E59C8230F7",
       "device": "xck26-sfvc784-2LV-c",
       "gen_directory": "../../../../vMotion.gen/sources_1/bd/kr260_bd",
       "name": "kr260_bd",
@@ -27,125 +27,125 @@
       "rpi_gpio": ""
     },
     "interface_ports": {
-      "gpio_rtl": {
+      "pmod1_io": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "gpio_rtl_tri_i",
+            "physical_name": "pmod1_io_tri_i",
             "direction": "I",
             "left": "7",
             "right": "0"
           },
           "TRI_O": {
-            "physical_name": "gpio_rtl_tri_o",
+            "physical_name": "pmod1_io_tri_o",
             "direction": "O",
             "left": "7",
             "right": "0"
           },
           "TRI_T": {
-            "physical_name": "gpio_rtl_tri_t",
+            "physical_name": "pmod1_io_tri_t",
             "direction": "O",
             "left": "7",
             "right": "0"
           }
         }
       },
-      "gpio_rtl_0": {
+      "pmod2_io": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "gpio_rtl_0_tri_i",
+            "physical_name": "pmod2_io_tri_i",
             "direction": "I",
             "left": "7",
             "right": "0"
           },
           "TRI_O": {
-            "physical_name": "gpio_rtl_0_tri_o",
+            "physical_name": "pmod2_io_tri_o",
             "direction": "O",
             "left": "7",
             "right": "0"
           },
           "TRI_T": {
-            "physical_name": "gpio_rtl_0_tri_t",
+            "physical_name": "pmod2_io_tri_t",
             "direction": "O",
             "left": "7",
             "right": "0"
           }
         }
       },
-      "gpio_rtl_1": {
+      "pmod3_io": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "gpio_rtl_1_tri_i",
+            "physical_name": "pmod3_io_tri_i",
             "direction": "I",
             "left": "7",
             "right": "0"
           },
           "TRI_O": {
-            "physical_name": "gpio_rtl_1_tri_o",
+            "physical_name": "pmod3_io_tri_o",
             "direction": "O",
             "left": "7",
             "right": "0"
           },
           "TRI_T": {
-            "physical_name": "gpio_rtl_1_tri_t",
+            "physical_name": "pmod3_io_tri_t",
             "direction": "O",
             "left": "7",
             "right": "0"
           }
         }
       },
-      "gpio_rtl_2": {
+      "pmod4_io": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "gpio_rtl_2_tri_i",
+            "physical_name": "pmod4_io_tri_i",
             "direction": "I",
             "left": "7",
             "right": "0"
           },
           "TRI_O": {
-            "physical_name": "gpio_rtl_2_tri_o",
+            "physical_name": "pmod4_io_tri_o",
             "direction": "O",
             "left": "7",
             "right": "0"
           },
           "TRI_T": {
-            "physical_name": "gpio_rtl_2_tri_t",
+            "physical_name": "pmod4_io_tri_t",
             "direction": "O",
             "left": "7",
             "right": "0"
           }
         }
       },
-      "gpio_rtl_3": {
+      "rpi_gpio": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "gpio_rtl_3_tri_i",
+            "physical_name": "rpi_gpio_tri_i",
             "direction": "I",
             "left": "27",
             "right": "0"
           },
           "TRI_O": {
-            "physical_name": "gpio_rtl_3_tri_o",
+            "physical_name": "rpi_gpio_tri_o",
             "direction": "O",
             "left": "27",
             "right": "0"
           },
           "TRI_T": {
-            "physical_name": "gpio_rtl_3_tri_t",
+            "physical_name": "rpi_gpio_tri_t",
             "direction": "O",
             "left": "27",
             "right": "0"
@@ -1946,31 +1946,31 @@
       },
       "pmod_1_GPIO": {
         "interface_ports": [
-          "gpio_rtl",
+          "pmod1_io",
           "pmod_1/GPIO"
         ]
       },
       "pmod_2_GPIO": {
         "interface_ports": [
-          "gpio_rtl_0",
+          "pmod2_io",
           "pmod_2/GPIO"
         ]
       },
       "pmod_3_GPIO": {
         "interface_ports": [
-          "gpio_rtl_1",
+          "pmod3_io",
           "pmod_3/GPIO"
         ]
       },
       "pmod_4_GPIO": {
         "interface_ports": [
-          "gpio_rtl_2",
+          "pmod4_io",
           "pmod_4/GPIO"
         ]
       },
       "rpi_gpio_GPIO": {
         "interface_ports": [
-          "gpio_rtl_3",
+          "rpi_gpio",
           "rpi_gpio/GPIO"
         ]
       },

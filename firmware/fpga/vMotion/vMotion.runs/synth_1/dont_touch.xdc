@@ -3,6 +3,10 @@
 
 # XDC: new/fan_pinout.xdc
 
+# XDC: new/pmod_pinout.xdc
+
+# XDC: new/rpi_pinout.xdc
+
 # Block Designs: bd/kr260_bd/kr260_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd || ORIG_REF_NAME==kr260_bd} -quiet] -quiet
 
@@ -33,37 +37,202 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_ax
 # IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_2/bd_ac08_s00mmu_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_2/bd_ac08_arinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_3/bd_ac08_s00tr_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_3/bd_ac08_rinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_4/bd_ac08_s00sic_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_4/bd_ac08_awinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_5/bd_ac08_s00a2s_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_5/bd_ac08_winsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_6/bd_ac08_sarn_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_6/bd_ac08_binsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_7/bd_ac08_srn_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_7/bd_ac08_aroutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_8/bd_ac08_sawn_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_8/bd_ac08_routsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_9/bd_ac08_swn_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_9/bd_ac08_awoutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_10/bd_ac08_sbn_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_10/bd_ac08_woutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_11/bd_ac08_m00s2a_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_11/bd_ac08_boutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_12/bd_ac08_m00e_0.xci
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_12/bd_ac08_arni_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_13/bd_ac08_rni_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_14/bd_ac08_awni_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_15/bd_ac08_wni_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_16/bd_ac08_bni_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_17/bd_ac08_s00mmu_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_18/bd_ac08_s00tr_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_19/bd_ac08_s00sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_20/bd_ac08_s00a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_21/bd_ac08_sarn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_22/bd_ac08_srn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_23/bd_ac08_sawn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_24/bd_ac08_swn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_25/bd_ac08_sbn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_26/bd_ac08_m00s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_27/bd_ac08_m00arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_28/bd_ac08_m00rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_29/bd_ac08_m00awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_30/bd_ac08_m00wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_31/bd_ac08_m00bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_32/bd_ac08_m00e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_33/bd_ac08_m01s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_34/bd_ac08_m01arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_35/bd_ac08_m01rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_36/bd_ac08_m01awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_37/bd_ac08_m01wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_38/bd_ac08_m01bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_39/bd_ac08_m01e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_40/bd_ac08_m02s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_41/bd_ac08_m02arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_42/bd_ac08_m02rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_43/bd_ac08_m02awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_44/bd_ac08_m02wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_45/bd_ac08_m02bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_46/bd_ac08_m02e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_47/bd_ac08_m03s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_48/bd_ac08_m03arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_49/bd_ac08_m03rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_50/bd_ac08_m03awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_51/bd_ac08_m03wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_52/bd_ac08_m03bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_53/bd_ac08_m03e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_54/bd_ac08_m04s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_55/bd_ac08_m04arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_56/bd_ac08_m04rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_57/bd_ac08_m04awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_58/bd_ac08_m04wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_59/bd_ac08_m04bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_60/bd_ac08_m04e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_61/bd_ac08_m05s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_62/bd_ac08_m05arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_63/bd_ac08_m05rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_64/bd_ac08_m05awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_65/bd_ac08_m05wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_66/bd_ac08_m05bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_67/bd_ac08_m05e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
 # IP: bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xci
@@ -71,6 +240,21 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_rs
 
 # IP: bd/kr260_bd/ip/kr260_bd_xlslice_0_0/kr260_bd_xlslice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_xlslice_0_0 || ORIG_REF_NAME==kr260_bd_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_1_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_2_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_2_0} -quiet] -quiet
+
+# IP: bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_3_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_3_0} -quiet] -quiet
+
+# IP: bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_1 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_1} -quiet] -quiet
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_zynq_ultra_ps_e_0_0/kr260_bd_zynq_ultra_ps_e_0_0_ooc.xdc
 
@@ -111,19 +295,119 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_5/bd_ac08_s00a2s_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_2/bd_ac08_arinsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_6/bd_ac08_sarn_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_3/bd_ac08_rinsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_7/bd_ac08_srn_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_4/bd_ac08_awinsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_8/bd_ac08_sawn_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_5/bd_ac08_winsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_9/bd_ac08_swn_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_6/bd_ac08_binsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_10/bd_ac08_sbn_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_7/bd_ac08_aroutsw_0_ooc.xdc
 
-# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_11/bd_ac08_m00s2a_0_ooc.xdc
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_8/bd_ac08_routsw_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_9/bd_ac08_awoutsw_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_10/bd_ac08_woutsw_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_11/bd_ac08_boutsw_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_12/bd_ac08_arni_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_13/bd_ac08_rni_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_14/bd_ac08_awni_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_15/bd_ac08_wni_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_16/bd_ac08_bni_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_20/bd_ac08_s00a2s_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_21/bd_ac08_sarn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_22/bd_ac08_srn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_23/bd_ac08_sawn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_24/bd_ac08_swn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_25/bd_ac08_sbn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_26/bd_ac08_m00s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_27/bd_ac08_m00arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_28/bd_ac08_m00rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_29/bd_ac08_m00awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_30/bd_ac08_m00wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_31/bd_ac08_m00bn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_33/bd_ac08_m01s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_34/bd_ac08_m01arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_35/bd_ac08_m01rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_36/bd_ac08_m01awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_37/bd_ac08_m01wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_38/bd_ac08_m01bn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_40/bd_ac08_m02s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_41/bd_ac08_m02arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_42/bd_ac08_m02rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_43/bd_ac08_m02awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_44/bd_ac08_m02wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_45/bd_ac08_m02bn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_47/bd_ac08_m03s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_48/bd_ac08_m03arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_49/bd_ac08_m03rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_50/bd_ac08_m03awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_51/bd_ac08_m03wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_52/bd_ac08_m03bn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_54/bd_ac08_m04s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_55/bd_ac08_m04arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_56/bd_ac08_m04rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_57/bd_ac08_m04awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_58/bd_ac08_m04wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_59/bd_ac08_m04bn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_61/bd_ac08_m05s2a_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_62/bd_ac08_m05arn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_63/bd_ac08_m05rn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_64/bd_ac08_m05awn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_65/bd_ac08_m05wn_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_66/bd_ac08_m05bn_0_ooc.xdc
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/ooc.xdc
 
@@ -135,5 +419,45 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_rst_ps8_0_99M_0 || ORIG_REF_NAME==kr260_bd_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_1_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_1_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_2_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_2_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_2_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_2_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_3_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_3_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_3_0 || ORIG_REF_NAME==kr260_bd_axi_gpio_3_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_1 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kr260_bd_axi_gpio_0_1 || ORIG_REF_NAME==kr260_bd_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/kr260_bd_ooc.xdc

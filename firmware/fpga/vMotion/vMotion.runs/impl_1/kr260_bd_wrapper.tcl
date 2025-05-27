@@ -97,6 +97,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -104,8 +106,14 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param bd.open.in_stealth_mode 3
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableLutRouteBelPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param bd.open.in_stealth_mode 1
   set_param chipscope.maxJobs 8
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-32684-jubu/incrSyn
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xck26-sfvc784-2LV-c
@@ -128,6 +136,8 @@ OPTRACE "add files" START { }
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
@@ -297,7 +307,7 @@ OPTRACE "read constraints: write_bitstream" END { }
   catch { write_mem_info -force -no_partial_mmi kr260_bd_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
-  write_bitstream -force kr260_bd_wrapper.bit 
+  write_bitstream -force kr260_bd_wrapper.bit -bin_file
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
 OPTRACE "read constraints: write_bitstream_post" START { }
