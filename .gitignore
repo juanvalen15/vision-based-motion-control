@@ -86,3 +86,18 @@
 !*.elf
 !*.bmm
 !*.xmp
+############## PETALINUX #####################
+*/*/config.old
+*/*/rootfs_config.old
+/build/
+/images/
+pre-built/linux/
+.petalinux/*
+!.petalinux/metadata
+*.o
+*.jou
+*.log
+!/project-spec/hw-description/metadata
+/components/
+/project-spec/meta-plnx-generated/
+/.Xil/

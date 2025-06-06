@@ -1,0 +1,1139 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue May 27 20:15:26 2025
+# Process ID         : 61416
+# Current directory  : /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1
+# Command line       : vivado -log kr260_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kr260_bd_wrapper.tcl -notrace
+# Log file           : /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper.vdi
+# Journal file       : /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/vivado.jou
+# Running On         : jubu
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900K
+# CPU Frequency      : 850.592 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 66967 MB
+# Swap memory        : 143155 MB
+# Total Virtual      : 210123 MB
+# Available Virtual  : 201404 MB
+#-----------------------------------------------------------
+source kr260_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/juan/Xilinx/Vivado/2024.2/data/ip'.
+Command: link_design -top kr260_bd_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2575.328 ; gain = 0.000 ; free physical = 40702 ; free virtual = 190441
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0_board.xdc] for cell 'kr260_bd_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0_board.xdc] for cell 'kr260_bd_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1.xdc] for cell 'kr260_bd_i/rpi_gpio/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1.xdc] for cell 'kr260_bd_i/rpi_gpio/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1_board.xdc] for cell 'kr260_bd_i/rpi_gpio/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_1/kr260_bd_axi_gpio_0_1_board.xdc] for cell 'kr260_bd_i/rpi_gpio/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0.xdc] for cell 'kr260_bd_i/pmod_4/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0.xdc] for cell 'kr260_bd_i/pmod_4/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0_board.xdc] for cell 'kr260_bd_i/pmod_4/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_3_0/kr260_bd_axi_gpio_3_0_board.xdc] for cell 'kr260_bd_i/pmod_4/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0.xdc] for cell 'kr260_bd_i/pmod_3/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0.xdc] for cell 'kr260_bd_i/pmod_3/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0_board.xdc] for cell 'kr260_bd_i/pmod_3/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_2_0/kr260_bd_axi_gpio_2_0_board.xdc] for cell 'kr260_bd_i/pmod_3/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0.xdc] for cell 'kr260_bd_i/pmod_2/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0.xdc] for cell 'kr260_bd_i/pmod_2/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0_board.xdc] for cell 'kr260_bd_i/pmod_2/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_1_0/kr260_bd_axi_gpio_1_0_board.xdc] for cell 'kr260_bd_i/pmod_2/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0.xdc] for cell 'kr260_bd_i/pmod_1/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0.xdc] for cell 'kr260_bd_i/pmod_1/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0_board.xdc] for cell 'kr260_bd_i/pmod_1/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_gpio_0_0/kr260_bd_axi_gpio_0_0_board.xdc] for cell 'kr260_bd_i/pmod_1/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xdc] for cell 'kr260_bd_i/rst_ps8_0_99M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xdc:50]
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_rst_ps8_0_99M_0/kr260_bd_rst_ps8_0_99M_0.xdc] for cell 'kr260_bd_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_zynq_ultra_ps_e_0_0/kr260_bd_zynq_ultra_ps_e_0_0.xdc] for cell 'kr260_bd_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_zynq_ultra_ps_e_0_0/kr260_bd_zynq_ultra_ps_e_0_0.xdc] for cell 'kr260_bd_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/smartconnect.xdc] for cell 'kr260_bd_i/axi_smc/inst'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/smartconnect.xdc] for cell 'kr260_bd_i/axi_smc/inst'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0.xdc] for cell 'kr260_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0.xdc] for cell 'kr260_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0_board.xdc] for cell 'kr260_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_smc_0/bd_0/ip/ip_1/bd_ac08_psr_aclk_0_board.xdc] for cell 'kr260_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_intc_0_0/kr260_bd_axi_intc_0_0.xdc] for cell 'kr260_bd_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_intc_0_0/kr260_bd_axi_intc_0_0.xdc] for cell 'kr260_bd_i/axi_intc_0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kr260_bd_proc_sys_reset_1_0'. The XDC file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_proc_sys_reset_1_0/kr260_bd_proc_sys_reset_1_0.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kr260_bd_proc_sys_reset_1_0'. The XDC file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_proc_sys_reset_1_0/kr260_bd_proc_sys_reset_1_0_board.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kr260_bd_proc_sys_reset_0_0'. The XDC file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_proc_sys_reset_0_0/kr260_bd_proc_sys_reset_0_0.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kr260_bd_proc_sys_reset_0_0'. The XDC file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_proc_sys_reset_0_0/kr260_bd_proc_sys_reset_0_0_board.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0.xdc] for cell 'kr260_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3378.336 ; gain = 746.980 ; free physical = 40212 ; free virtual = 189952
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0.xdc] for cell 'kr260_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0_board.xdc] for cell 'kr260_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_clk_wiz_0_0/kr260_bd_clk_wiz_0_0_board.xdc] for cell 'kr260_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc]
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/fan_pinout.xdc]
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod1_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod2_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod3_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmod4_io[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/pmod_pinout.xdc]
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[0]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[1]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[2]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[3]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[4]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[5]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[6]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[7]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[8]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[8]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[9]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[9]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[10]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[10]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[11]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[11]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[12]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[12]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[13]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[13]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[14]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[14]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[15]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[15]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[16]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[16]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[17]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio[17]'. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:55]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc:55]
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.srcs/constrs_1/new/rpi_pinout.xdc]
+Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_intc_0_0/kr260_bd_axi_intc_0_0_clocks.xdc] for cell 'kr260_bd_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.gen/sources_1/bd/kr260_bd/ip/kr260_bd_axi_intc_0_0/kr260_bd_axi_intc_0_0_clocks.xdc] for cell 'kr260_bd_i/axi_intc_0/U0'
+INFO: [Project 1-1714] 89 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 1 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3378.336 ; gain = 0.000 ; free physical = 40197 ; free virtual = 189937
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 60 instances
+
+16 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3378.336 ; gain = 1803.805 ; free physical = 40197 ; free virtual = 189937
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.39 . Memory (MB): peak = 3473.875 ; gain = 95.539 ; free physical = 40112 ; free virtual = 189857
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3473.875 ; gain = 0.000 ; free physical = 40113 ; free virtual = 189857
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39722 ; free virtual = 189489
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39722 ; free virtual = 189489
+Phase 1 Initialization | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39722 ; free virtual = 189489
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39721 ; free virtual = 189488
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1a1f37fd9
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 8 pins
+INFO: [Opt 31-138] Pushed 105 inverter(s) to 323 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2c773fb1d
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39717 ; free virtual = 189484
+Retarget | Checksum: 2c773fb1d
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 370 cells
+INFO: [Opt 31-1021] In phase Retarget, 160 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 2c773fb1d
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39717 ; free virtual = 189484
+Constant propagation | Checksum: 2c773fb1d
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 160 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+Phase 5 Sweep | Checksum: 273ebd3aa
+
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.48 . Memory (MB): peak = 3749.773 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+Sweep | Checksum: 273ebd3aa
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 166 cells
+INFO: [Opt 31-1021] In phase Sweep, 201 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 273ebd3aa
+
+Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.5 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+BUFG optimization | Checksum: 273ebd3aa
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 273ebd3aa
+
+Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.5 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+Shift Register Optimization | Checksum: 273ebd3aa
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 273ebd3aa
+
+Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.51 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+Post Processing Netlist | Checksum: 273ebd3aa
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 195 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3781.789 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.54 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+Phase 9 Finalization | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.54 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |             370  |                                            160  |
+|  Constant propagation         |               0  |               0  |                                            160  |
+|  Sweep                        |               0  |             166  |                                            201  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            195  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.54 . Memory (MB): peak = 3781.789 ; gain = 32.016 ; free physical = 39719 ; free virtual = 189486
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3781.789 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3781.789 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3781.789 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+Ending Netlist Obfuscation Task | Checksum: 2119c9162
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3781.789 ; gain = 0.000 ; free physical = 39719 ; free virtual = 189486
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_drc -file kr260_bd_wrapper_drc_opted.rpt -pb kr260_bd_wrapper_drc_opted.pb -rpx kr260_bd_wrapper_drc_opted.rpx
+Command: report_drc -file kr260_bd_wrapper_drc_opted.rpt -pb kr260_bd_wrapper_drc_opted.pb -rpx kr260_bd_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4579.781 ; gain = 797.992 ; free physical = 38830 ; free virtual = 188639
+generate_parallel_reports: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4579.781 ; gain = 797.992 ; free physical = 38830 ; free virtual = 188639
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38830 ; free virtual = 188639
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38830 ; free virtual = 188639
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38833 ; free virtual = 188643
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38828 ; free virtual = 188638
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38828 ; free virtual = 188638
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38820 ; free virtual = 188633
+Write Physdb Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38820 ; free virtual = 188633
+INFO: [Common 17-1381] The checkpoint '/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38836 ; free virtual = 188648
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1f69cba55
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38836 ; free virtual = 188648
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38836 ; free virtual = 188648
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1e31e4bfe
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.32 . Memory (MB): peak = 4579.781 ; gain = 0.000 ; free physical = 38833 ; free virtual = 188646
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ee598fac
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4618.824 ; gain = 39.043 ; free physical = 38851 ; free virtual = 188663
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ee598fac
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4618.824 ; gain = 39.043 ; free physical = 38851 ; free virtual = 188663
+Phase 1 Placer Initialization | Checksum: 1ee598fac
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4618.824 ; gain = 39.043 ; free physical = 38851 ; free virtual = 188663
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 299b1f399
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4618.824 ; gain = 39.043 ; free physical = 38869 ; free virtual = 188681
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 299b1f399
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4618.824 ; gain = 39.043 ; free physical = 38869 ; free virtual = 188681
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 299b1f399
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4821.809 ; gain = 242.027 ; free physical = 38545 ; free virtual = 188350
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 2554c3860
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38544 ; free virtual = 188350
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 2554c3860
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38544 ; free virtual = 188350
+Phase 2.1.1 Partition Driven Placement | Checksum: 2554c3860
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38544 ; free virtual = 188350
+Phase 2.1 Floorplanning | Checksum: 2a67c7d35
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38543 ; free virtual = 188349
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2a67c7d35
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38543 ; free virtual = 188349
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2a67c7d35
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4853.824 ; gain = 274.043 ; free physical = 38543 ; free virtual = 188349
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 2498c7540
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 4884.824 ; gain = 305.043 ; free physical = 38496 ; free virtual = 188306
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1f1f9787b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38496 ; free virtual = 188306
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 142 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 52 nets or LUTs. Breaked 0 LUT, combined 52 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 6 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 6 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4886.824 ; gain = 0.000 ; free physical = 38496 ; free virtual = 188306
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4886.824 ; gain = 0.000 ; free physical = 38496 ; free virtual = 188306
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             52  |                    52  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             52  |                    53  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 28967b4f2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38497 ; free virtual = 188306
+Phase 2.5 Global Place Phase2 | Checksum: 25fa14742
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:10 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38494 ; free virtual = 188304
+Phase 2 Global Placement | Checksum: 25fa14742
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:10 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38494 ; free virtual = 188304
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d6bb4d7c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38483 ; free virtual = 188287
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 26c8411d7
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38482 ; free virtual = 188284
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1f3919792
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38470 ; free virtual = 188273
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 230dfa9f4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38469 ; free virtual = 188273
+Phase 3.3.2 Slice Area Swap | Checksum: 230dfa9f4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38472 ; free virtual = 188276
+Phase 3.3 Small Shape DP | Checksum: 2915bdf57
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38472 ; free virtual = 188275
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1ddeb276b
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38472 ; free virtual = 188275
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 24a2c8e7e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38472 ; free virtual = 188275
+Phase 3 Detail Placement | Checksum: 24a2c8e7e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:14 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38471 ; free virtual = 188275
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 22b13e45a
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=6.925 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 20a4f1def
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4886.824 ; gain = 0.000 ; free physical = 38495 ; free virtual = 188299
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 24812c12d
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4886.824 ; gain = 0.000 ; free physical = 38495 ; free virtual = 188299
+Phase 4.1.1.1 BUFG Insertion | Checksum: 22b13e45a
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:18 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38495 ; free virtual = 188299
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.925. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 198e8fb09
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:18 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38495 ; free virtual = 188298
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:18 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38495 ; free virtual = 188298
+Phase 4.1 Post Commit Optimization | Checksum: 198e8fb09
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:18 . Memory (MB): peak = 4886.824 ; gain = 307.043 ; free physical = 38495 ; free virtual = 188298
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38470 ; free virtual = 188273
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e80b9843
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: e80b9843
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+Phase 4.3 Placer Reporting | Checksum: e80b9843
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38470 ; free virtual = 188273
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 145c20da6
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+Ending Placer Task | Checksum: 10b704d39
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38470 ; free virtual = 188273
+82 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4900.809 ; gain = 321.027 ; free physical = 38469 ; free virtual = 188273
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file kr260_bd_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38473 ; free virtual = 188276
+INFO: [Vivado 12-24828] Executing command : report_utilization -file kr260_bd_wrapper_utilization_placed.rpt -pb kr260_bd_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_io -file kr260_bd_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.25 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38469 ; free virtual = 188272
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38467 ; free virtual = 188270
+Wrote PlaceDB: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188269
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188269
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188270
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188270
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188273
+Write Physdb Complete: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.13 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188273
+INFO: [Common 17-1381] The checkpoint '/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.74 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38495 ; free virtual = 188302
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 6.926 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38496 ; free virtual = 188303
+Wrote PlaceDB: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38494 ; free virtual = 188304
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38494 ; free virtual = 188304
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38493 ; free virtual = 188305
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38493 ; free virtual = 188305
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38493 ; free virtual = 188308
+Write Physdb Complete: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.14 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38493 ; free virtual = 188308
+INFO: [Common 17-1381] The checkpoint '/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4428c6b0 ConstDB: 0 ShapeSum: b20d6303 RouteDB: 153a2386
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.44 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38487 ; free virtual = 188297
+Post Restoration Checksum: NetGraph: 2c78cdf | NumContArr: 7ed2bbb | Constraints: 6d7228c2 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 13acfdbf9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38509 ; free virtual = 188319
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 13acfdbf9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38509 ; free virtual = 188319
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 13acfdbf9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38509 ; free virtual = 188319
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1c3b69fb1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38524 ; free virtual = 188334
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 154339345
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38524 ; free virtual = 188335
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.033  | TNS=0.000  | WHS=0.036  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 2929
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 2531
+  Number of Partially Routed Nets     = 398
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 22f725d19
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38536 ; free virtual = 188346
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 22f725d19
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38529 ; free virtual = 188340
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 10327d83e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38532 ; free virtual = 188342
+Phase 4 Initial Routing | Checksum: 106b15933
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38532 ; free virtual = 188342
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 251
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.708  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 5.1 Global Iteration 0 | Checksum: 26009f14b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188283
+
+Phase 5.2 Additional Iteration for Hold
+Phase 5.2 Additional Iteration for Hold | Checksum: 259460ea6
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188282
+Phase 5 Rip-up And Reroute | Checksum: 259460ea6
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188282
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188282
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188282
+Phase 6 Delay and Skew Optimization | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188282
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.708  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+Phase 7 Post Hold Fix | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.413196 %
+  Global Horizontal Routing Utilization  = 0.22641 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+
+Phase 13 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=6.708  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 220b98730
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38463 ; free virtual = 188281
+Total Elapsed time in route_design: 5.33 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 14fb51960
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188281
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 14fb51960
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38462 ; free virtual = 188279
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+104 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4900.809 ; gain = 0.000 ; free physical = 38448 ; free virtual = 188269
+INFO: [Vivado 12-24828] Executing command : report_drc -file kr260_bd_wrapper_drc_routed.rpt -pb kr260_bd_wrapper_drc_routed.pb -rpx kr260_bd_wrapper_drc_routed.rpx
+Command: report_drc -file kr260_bd_wrapper_drc_routed.rpt -pb kr260_bd_wrapper_drc_routed.pb -rpx kr260_bd_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file kr260_bd_wrapper_methodology_drc_routed.rpt -pb kr260_bd_wrapper_methodology_drc_routed.pb -rpx kr260_bd_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file kr260_bd_wrapper_methodology_drc_routed.rpt -pb kr260_bd_wrapper_methodology_drc_routed.pb -rpx kr260_bd_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file kr260_bd_wrapper_timing_summary_routed.rpt -pb kr260_bd_wrapper_timing_summary_routed.pb -rpx kr260_bd_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file kr260_bd_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file kr260_bd_wrapper_route_status.rpt -pb kr260_bd_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file kr260_bd_wrapper_bus_skew_routed.rpt -pb kr260_bd_wrapper_bus_skew_routed.pb -rpx kr260_bd_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_power -file kr260_bd_wrapper_power_routed.rpt -pb kr260_bd_wrapper_power_summary_routed.pb -rpx kr260_bd_wrapper_power_routed.rpx
+Command: report_power -file kr260_bd_wrapper_power_routed.rpt -pb kr260_bd_wrapper_power_summary_routed.pb -rpx kr260_bd_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+124 Infos, 101 Warnings, 104 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file kr260_bd_wrapper_clock_utilization_routed.rpt
+generate_parallel_reports: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 4956.918 ; gain = 56.109 ; free physical = 38448 ; free virtual = 188266
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38461 ; free virtual = 188278
+Wrote PlaceDB: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38461 ; free virtual = 188281
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38461 ; free virtual = 188281
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38459 ; free virtual = 188280
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38459 ; free virtual = 188280
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38455 ; free virtual = 188280
+Write Physdb Complete: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.15 . Memory (MB): peak = 4956.918 ; gain = 0.000 ; free physical = 38455 ; free virtual = 188280
+INFO: [Common 17-1381] The checkpoint '/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/vMotion.runs/impl_1/kr260_bd_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue May 27 20:16:39 2025...
