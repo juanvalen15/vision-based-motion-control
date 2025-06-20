@@ -1,0 +1,5 @@
+PETALINUX_VER=2024.2
+HARDWARE_PATH=/home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/fpga/vMotion/sdt_outdir/system-top.dts
+HDF_EXT=sdt
+VALIDATE_HW_CHKSUM=1
+YOCTO_SDK=3442daf935d4ea985e728901c03b45d5c2e566533aca11ba24d3a2becd5842bc
