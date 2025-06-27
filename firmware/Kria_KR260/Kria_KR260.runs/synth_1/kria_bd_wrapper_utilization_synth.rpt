@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Fri Jun 27 12:43:58 2025
+| Date         : Fri Jun 27 13:22:49 2025
 | Host         : jubu running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file kria_bd_wrapper_utilization_synth.rpt -pb kria_bd_wrapper_utilization_synth.pb
 | Design       : kria_bd_wrapper
@@ -32,16 +32,16 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  |  797 |     0 |          0 |    117120 |  0.68 |
-|   LUT as Logic             |  719 |     0 |          0 |    117120 |  0.61 |
-|   LUT as Memory            |   78 |     0 |          0 |     57600 |  0.14 |
+| CLB LUTs*                  |  779 |     0 |          0 |    117120 |  0.67 |
+|   LUT as Logic             |  703 |     0 |          0 |    117120 |  0.60 |
+|   LUT as Memory            |   76 |     0 |          0 |     57600 |  0.13 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |   78 |     0 |            |           |       |
-| CLB Registers              |  642 |     0 |          0 |    234240 |  0.27 |
-|   Register as Flip Flop    |  642 |     0 |          0 |    234240 |  0.27 |
+|     LUT as Shift Register  |   76 |     0 |            |           |       |
+| CLB Registers              |  591 |     0 |          0 |    234240 |  0.25 |
+|   Register as Flip Flop    |  591 |     0 |          0 |    234240 |  0.25 |
 |   Register as Latch        |    0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |    0 |     0 |          0 |     14640 |  0.00 |
-| F7 Muxes                   |    0 |     0 |          0 |     58560 |  0.00 |
+| F7 Muxes                   |    3 |     0 |          0 |     58560 | <0.01 |
 | F8 Muxes                   |    0 |     0 |          0 |     29280 |  0.00 |
 | F9 Muxes                   |    0 |     0 |          0 |     14640 |  0.00 |
 +----------------------------+------+-------+------------+-----------+-------+
@@ -63,7 +63,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 21    |          Yes |         Set |            - |
-| 621   |          Yes |       Reset |            - |
+| 570   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -97,7 +97,7 @@ Table of Contents
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| Bonded IOB |    0 |     0 |          0 |       189 |  0.00 |
+| Bonded IOB |    1 |     0 |          0 |       189 |  0.53 |
 +------------+------+-------+------------+-----------+-------+
 
 
@@ -158,19 +158,21 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       |  621 |            Register |
-| LUT1       |  279 |                 CLB |
-| LUT3       |  197 |                 CLB |
-| LUT6       |  184 |                 CLB |
-| LUT5       |  108 |                 CLB |
-| LUT4       |   66 |                 CLB |
-| SRLC32E    |   51 |                 CLB |
-| LUT2       |   47 |                 CLB |
-| SRL16E     |   27 |                 CLB |
+| FDRE       |  570 |            Register |
+| LUT1       |  282 |                 CLB |
+| LUT3       |  199 |                 CLB |
+| LUT6       |  162 |                 CLB |
+| LUT4       |   81 |                 CLB |
+| LUT5       |   78 |                 CLB |
+| SRLC32E    |   50 |                 CLB |
+| LUT2       |   48 |                 CLB |
+| SRL16E     |   26 |                 CLB |
 | FDSE       |   21 |            Register |
+| MUXF7      |    3 |                 CLB |
 | BUFG_PS    |    2 |               Clock |
 | BUFGCE     |    2 |               Clock |
 | PS8        |    1 |            Advanced |
+| OBUF       |    1 |                 I/O |
 | MMCME4_ADV |    1 |               Clock |
 +------------+------+---------------------+
 

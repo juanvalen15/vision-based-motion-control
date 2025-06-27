@@ -122,7 +122,11 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param power.enableLutRouteBelPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableUnconnectedCarry8PinPower 1
   set_param chipscope.maxJobs 8
+  set_param power.BramSDPPropagationFix 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xck26-sfvc784-2LV-c
   set_property board_part_repo_paths {/home/juan/.Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
@@ -144,6 +148,7 @@ OPTRACE "add files" START { }
   add_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/sources_1/bd/kria_bd/kria_bd.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/fan_pinout.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

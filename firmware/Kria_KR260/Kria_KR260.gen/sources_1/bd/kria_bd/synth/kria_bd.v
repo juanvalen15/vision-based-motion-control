@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-//Date        : Fri Jun 27 12:40:57 2025
+//Date        : Fri Jun 27 13:21:51 2025
 //Host        : jubu running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target kria_bd.bd
 //Design      : kria_bd
@@ -9,9 +9,10 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "kria_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=kria_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "kria_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "kria_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=kria_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "kria_bd.hwdef" *) 
 module kria_bd
-   ();
+   (fan_en_b);
+  output [0:0]fan_en_b;
 
   wire axi_intc_0_irq;
   wire clk_wiz_0_clk_out1;
@@ -34,6 +35,7 @@ module kria_bd
   wire ps8_0_axi_periph_M00_AXI_WREADY;
   wire [3:0]ps8_0_axi_periph_M00_AXI_WSTRB;
   wire ps8_0_axi_periph_M00_AXI_WVALID;
+  wire [0:0]xlslice_0_Dout;
   wire [39:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARCACHE;
@@ -71,9 +73,11 @@ module kria_bd
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WREADY;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WSTRB;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WVALID;
+  wire [2:0]zynq_ultra_ps_e_0_emio_ttc0_wave_o;
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
+  assign fan_en_b[0] = xlslice_0_Dout;
   kria_bd_axi_intc_0_0 axi_intc_0
        (.intr(1'b0),
         .irq(axi_intc_0_irq),
@@ -175,8 +179,12 @@ module kria_bd
         .S00_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WREADY),
         .S00_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WSTRB),
         .S00_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WVALID));
+  kria_bd_xlslice_0_0 xlslice_0
+       (.Din(zynq_ultra_ps_e_0_emio_ttc0_wave_o),
+        .Dout(xlslice_0_Dout));
   kria_bd_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
-       (.maxigp2_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR),
+       (.emio_ttc0_wave_o(zynq_ultra_ps_e_0_emio_ttc0_wave_o),
+        .maxigp2_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR),
         .maxigp2_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST),
         .maxigp2_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARCACHE),
         .maxigp2_arid(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARID),
