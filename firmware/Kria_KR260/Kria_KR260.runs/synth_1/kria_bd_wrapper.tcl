@@ -93,7 +93,7 @@ set_property ip_output_repo /home/juan/Desktop/ws/portfolio/vision-based-motion-
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/hdl/kria_bd_wrapper.v
+read_verilog -library xil_defaultlib /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/sources_1/imports/hdl/kria_bd_wrapper.v
 add_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/sources_1/bd/kria_bd/kria_bd.bd
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_zynq_ultra_ps_e_0_0/kria_bd_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_zynq_ultra_ps_e_0_0/kria_bd_zynq_ultra_ps_e_0_0.xdc]
@@ -107,6 +107,21 @@ set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_intc_0_0/kria_bd_axi_intc_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_intc_0_0/kria_bd_axi_intc_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_intc_0_0/kria_bd_axi_intc_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0.xdc]
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_auto_pc_0/kria_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/kria_bd_ooc.xdc]
 
@@ -121,6 +136,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/fan_pinout.xdc
 set_property used_in_implementation false [get_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/fan_pinout.xdc]
+
+read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/rpi_pinout.xdc
+set_property used_in_implementation false [get_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/rpi_pinout.xdc]
+
+read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/pmod_pinout.xdc
+set_property used_in_implementation false [get_files /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/pmod_pinout.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

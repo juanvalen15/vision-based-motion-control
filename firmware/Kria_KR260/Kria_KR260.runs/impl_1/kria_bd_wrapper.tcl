@@ -149,6 +149,8 @@ OPTRACE "add files" START { }
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/fan_pinout.xdc
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/rpi_pinout.xdc
+  read_xdc /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.srcs/constrs_1/new/pmod_pinout.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -319,7 +321,7 @@ OPTRACE "read constraints: write_bitstream" END { }
   catch { write_mem_info -force -no_partial_mmi kria_bd_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
-  write_bitstream -force kria_bd_wrapper.bit 
+  write_bitstream -force kria_bd_wrapper.bit -bin_file
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
 OPTRACE "read constraints: write_bitstream_post" START { }

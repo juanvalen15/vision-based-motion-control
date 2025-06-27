@@ -3,6 +3,10 @@
 
 # XDC: new/fan_pinout.xdc
 
+# XDC: new/rpi_pinout.xdc
+
+# XDC: new/pmod_pinout.xdc
+
 # Block Designs: bd/kria_bd/kria_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd || ORIG_REF_NAME==kria_bd} -quiet] -quiet
 
@@ -26,6 +30,24 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_ps8
 
 # IP: bd/kria_bd/ip/kria_bd_xlslice_0_0/kria_bd_xlslice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_xlslice_0_0 || ORIG_REF_NAME==kria_bd_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_xbar_0/kria_bd_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_xbar_0 || ORIG_REF_NAME==kria_bd_xbar_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_0_0 || ORIG_REF_NAME==kria_bd_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_1_0 || ORIG_REF_NAME==kria_bd_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_2_0 || ORIG_REF_NAME==kria_bd_axi_gpio_2_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_3_0 || ORIG_REF_NAME==kria_bd_axi_gpio_3_0} -quiet] -quiet
+
+# IP: bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_4_0 || ORIG_REF_NAME==kria_bd_axi_gpio_4_0} -quiet] -quiet
 
 # IP: bd/kria_bd/ip/kria_bd_auto_pc_0/kria_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==kria_bd_auto_pc_0 || ORIG_REF_NAME==kria_bd_auto_pc_0} -quiet] -quiet
@@ -62,6 +84,46 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_intc_0_0 || ORIG_REF_NAME==kria_bd_axi_intc_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_intc_0_0/kria_bd_axi_intc_0_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_0_0 || ORIG_REF_NAME==kria_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_0_0/kria_bd_axi_gpio_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_0_0 || ORIG_REF_NAME==kria_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_1_0 || ORIG_REF_NAME==kria_bd_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_1_0/kria_bd_axi_gpio_1_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_1_0 || ORIG_REF_NAME==kria_bd_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_2_0 || ORIG_REF_NAME==kria_bd_axi_gpio_2_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_2_0/kria_bd_axi_gpio_2_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_2_0 || ORIG_REF_NAME==kria_bd_axi_gpio_2_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_3_0 || ORIG_REF_NAME==kria_bd_axi_gpio_3_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_3_0/kria_bd_axi_gpio_3_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_3_0 || ORIG_REF_NAME==kria_bd_axi_gpio_3_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_4_0 || ORIG_REF_NAME==kria_bd_axi_gpio_4_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0_ooc.xdc
+
+# XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_axi_gpio_4_0/kria_bd_axi_gpio_4_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==kria_bd_axi_gpio_4_0 || ORIG_REF_NAME==kria_bd_axi_gpio_4_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/juan/Desktop/ws/portfolio/vision-based-motion-control/firmware/Kria_KR260/Kria_KR260.gen/sources_1/bd/kria_bd/ip/kria_bd_auto_pc_0/kria_bd_auto_pc_0_ooc.xdc
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1751023327">
+<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1751031541">
   <File Type="VDS-TIMINGSUMMARY" Name="kria_bd_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="kria_bd_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="kria_bd_wrapper_utilization_synth.pb"/>
@@ -18,8 +18,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PGENDIR/sources_1/bd/kria_bd/hdl/kria_bd_wrapper.v">
+    <File Path="$PSRCDIR/sources_1/imports/hdl/kria_bd_wrapper.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/kria_bd/hdl/kria_bd_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1751030829"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -34,6 +36,18 @@
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/fan_pinout.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/rpi_pinout.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/pmod_pinout.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
